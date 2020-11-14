@@ -20,13 +20,12 @@ ___________________________________________________________
 """
 print(name, "")
 
-
 try:
     f = open("auth.txt", "r")
     auth = f.read()
     f.close 
 except:
-    wr = str(input("\033[1;0;40mPaste Your Auth here :- "))
+    wr = str(input("\033[1;0;40mPASTE YOUR AUTH HERE :- "))
     f = open("auth.txt", "w")
     f.write(wr)
     f.close
@@ -40,7 +39,7 @@ try:
     url1 = f.read()
     f.close
 except:
-    wr = str(input("Paste Your URL here :- "))
+    wr = str(input("PASTE YOUR URL HERE :- "))
     f = open("url.txt", "w")
     f.write(wr)
     f.close
