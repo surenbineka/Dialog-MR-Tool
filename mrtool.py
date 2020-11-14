@@ -12,18 +12,22 @@ ___________________________________________________________
 \033[1;36;40m     
 \033[1;34;40m            █▀▄▀█ █▀▀ █▀▀ ▄▀█   █▀█ █░█ █▄░█
 \033[1;36;40m            █░▀░█ ██▄ █▄█ █▀█   █▀▄ █▄█ █░▀█
-\033[1;34;40m         
-\033[1;35;40m               +++ TOOL BY SUREN BINEKA +++
+\033[1;34;40m     
+\033[1;36;40m     
+\033[1;34;40m                
+
+\033[1;35;40m               +++ Tool By Suren Bineka +++
 \033[1;32;40m___________________________________________________________
 """
 print(name, "")
+
 
 try:
     f = open("auth.txt", "r")
     auth = f.read()
     f.close 
 except:
-    wr = str(input("\033[1;0;40mPASTE YOUR AUTH HERE :- "))
+    wr = str(input("\033[1;0;40mPASTE YOUR AUTH HERE  :- "))
     f = open("auth.txt", "w")
     f.write(wr)
     f.close
@@ -75,16 +79,16 @@ def main():
         resp = str(res)
         if resp == '<Response [204]>':
             print(bar)
-            print("\n\033[1;32;40m [+] BAD LUCK :\ TRY AGAIN LATER !... [+]")
+            print("\n\033[1;32;40m BAD LUCK : TRY AGAIN LATER !...")
             print(bar)  
         elif resp == '<Response [200]>':
             mm = mm + 1
             print(bar)
-            print("\n\033[1;32;40m [+] SUCESS..!!!! CHECK THE BALANCE... [+]")
+            print("\n\033[1;32;40m SUCESS..!!!! CHECK THE BALANCE...")
             print(bar)
         else:
             print(bar)
-            print("\n\033[1;31;40m [+] ERROR ! PLEASE CHECK IF THE NUMBER HAS BLOCKED ! [+]")
+            print("\n\033[1;31;40m  ERROR ! PLEASE CHECK IF THE NUMBER HAS BLOCKED")
             print(bar)
         
 
@@ -103,13 +107,13 @@ def main():
 
 
 def again():
-    again = input('\033[1;0;40m\WANT TO PLAY AGAIN ?(y/n) - ')
+    again = input('\033[1;0;40m\nWANT TO PLAY AGAIN ? (y/n) - ')
     if again == "y" or again == "Y":
         main()
     elif again == "n" or again == "N":
         quit()
     else:
-        print('\033[1;31;40m\TYPE Y OR N ONLY..')
+        print('\033[1;31;40m TYPE Y OR N ONLY..')
         again()
 
 
