@@ -20,11 +20,9 @@ pkg install python
 
 pkg install request 
 
-cd
-
 git clone https://github.com/surenbineka/Dialog-MR-Tool
 
-cd megarun
+cd Dialog-MR-Tool
 
 python mrtool.py
 
