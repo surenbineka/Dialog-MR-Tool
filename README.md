@@ -26,6 +26,6 @@ git clone https://github.com/surenbineka/Dialog-MR-Tool
 
 cd megarun
 
-python mega.py
+python mrtool.py
 
 -------------------------------------
