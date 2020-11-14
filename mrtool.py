@@ -9,14 +9,14 @@ bar = "\033[1;33;40m\n_________________________________________________\n"
 
 name = """\033[1;32;40m
 ___________________________________________________________
-\033[1;36;40m      __  __               _      ____        _   _
-\033[1;34;40m     |  \/  | ___  __ _   / \    |  _ \ _   _| \ | |
-\033[1;36;40m     | |\/| |/ _ \/ _` | / O \   | |_) | | | |  \| |
-\033[1;34;40m     | |  | |  __/ (_| |/ ___ \  |  _ <| |_| | |\  |
-\033[1;36;40m     |_|  |_|\___|\__, /_/   \_\ |_| \_\\____/|_| \_|
-\033[1;34;40m                  |___/
+\033[1;36;40m     
+\033[1;34;40m            █▀▄▀█ █▀▀ █▀▀ ▄▀█   █▀█ █░█ █▄░█
+\033[1;36;40m            █░▀░█ ██▄ █▄█ █▀█   █▀▄ █▄█ █░▀█
+\033[1;34;40m     
+\033[1;36;40m     
+\033[1;34;40m                
 
-\033[1;35;40m              [+] Tool By Malith(SK Dev)
+\033[1;35;40m               +++ Tool By Suren Bineka +++
 \033[1;32;40m___________________________________________________________
 """
 print(name, "")
@@ -27,7 +27,7 @@ try:
     auth = f.read()
     f.close 
 except:
-    wr = str(input("\033[1;0;40mPaste Your Auth here :- "))
+    wr = str(input("\033[1;0;40mPASTE YOUR AUTH HERE  :- "))
     f = open("auth.txt", "w")
     f.write(wr)
     f.close
@@ -41,7 +41,7 @@ try:
     url1 = f.read()
     f.close
 except:
-    wr = str(input("Paste Your URL here :- "))
+    wr = str(input("PASTE YOUR URL HERE :- "))
     f = open("url.txt", "w")
     f.write(wr)
     f.close
@@ -79,21 +79,21 @@ def main():
         resp = str(res)
         if resp == '<Response [204]>':
             print(bar)
-            print("\n\033[1;32;40m [+] Data Nathoo ... [+]")
+            print("\n\033[1;32;40m BAD LUCK : TRY AGAIN LATER !...")
             print(bar)  
         elif resp == '<Response [200]>':
             mm = mm + 1
             print(bar)
-            print("\n\033[1;32;40m [+] Data Awa..!!!! Balance Eka Balanna ... [+]")
+            print("\n\033[1;32;40m SUCESS..!!!! CHECK THE BALANCE...")
             print(bar)
         else:
             print(bar)
-            print("\n\033[1;31;40m [+] Poddak Check karala balanna Block Unada Manda... [+]")
+            print("\n\033[1;31;40m  ERROR ! PLEASE CHECK IF THE NUMBER HAS BLOCKED")
             print(bar)
         
 
         ss+=1
-        print("\033[1;0;40m\n",str(ss)," kin ",str(mm), "Goda....  Eelaga request Ekata Poddak inna...",end="")
+        print("\033[1;0;40m\n",str(ss)," kin ",str(mm), "SUCESS....WAIT FOR THE NEXT REQUEST...",end="")
         for i in range(180):
             
             pr = i/180*100
@@ -107,13 +107,13 @@ def main():
 
 
 def again():
-    again = input('\033[1;0;40m\nAye Parak Karanawada (y/n) - ')
+    again = input('\033[1;0;40m\nWANT TO PLAY AGAIN ? (y/n) - ')
     if again == "y" or again == "Y":
         main()
     elif again == "n" or again == "N":
         quit()
     else:
-        print('\033[1;31;40my hari n hari witharai..')
+        print('\033[1;31;40m TYPE Y OR N ONLY..')
         again()
 
 
